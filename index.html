@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whatsapp web</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./general.css">
 </head>
 
 <body>
@@ -26,7 +27,6 @@
             </svg>
           </div>
         </div>
-
         <div class="side__upper-search">
           <div class="side__upper-search-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -40,56 +40,153 @@
 
       <div class="side__lower">
         <div class="side__lower-list">
-          <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-              <path
-                d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z" />
-            </svg>Contact 1</div>
+          <div class="side__lower-contact active-chat"><img src="./images/laura.jpg">
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M206.7 378.1c10.23 7.832 24.32 7.832 34.55 0C282.6 346.3 384 259.6 384 173.6C384 65.83 312.3 0 224 0C135.6 0 64 65.83 64 173.6C64 259.6 165.4 346.3 206.7 378.1zM240 236c0-33.13 26.88-60 60-60h24c6.625 0 12 5.375 12 12v8C336 229.1 309.1 256 276 256h-24C245.4 256 240 250.6 240 244V236zM112 196v-8C112 181.4 117.4 176 124 176h24C181.1 176 208 202.9 208 236v8C208 250.6 202.6 256 196 256h-24C138.9 256 112 229.1 112 196zM319.7 352.5c-20.72 20.3-41.57 37.69-58.92 51.03C250.2 411.6 237.2 416 224 416s-26.23-4.43-36.78-12.51c-17.33-13.33-38.17-30.7-58.88-50.99C57.07 355.2 0 413.4 0 485.3C0 500.1 11.94 512 26.66 512H421.3C436.1 512 448 500.1 448 485.3C448 413.4 390.9 355.2 319.7 352.5z" />
-            </svg>Contact 2</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M176 448C167.3 448 160 455.3 160 464V512h32v-48C192 455.3 184.8 448 176 448zM272 448c-8.75 0-16 7.25-16 16s7.25 16 16 16s16-7.25 16-16S280.8 448 272 448zM164 172l8.205 24.62c1.215 3.645 6.375 3.645 7.59 0L188 172l24.62-8.203c3.646-1.219 3.646-6.375 0-7.594L188 148L179.8 123.4c-1.215-3.648-6.375-3.648-7.59 0L164 148L139.4 156.2c-3.646 1.219-3.646 6.375 0 7.594L164 172zM336.1 315.4C304 338.6 265.1 352 224 352s-80.03-13.43-112.1-36.59C46.55 340.2 0 403.3 0 477.3C0 496.5 15.52 512 34.66 512H128v-64c0-17.75 14.25-32 32-32h128c17.75 0 32 14.25 32 32v64h93.34C432.5 512 448 496.5 448 477.3C448 403.3 401.5 340.2 336.1 315.4zM64 224h13.5C102.3 280.5 158.4 320 224 320s121.8-39.5 146.5-96H384c8.75 0 16-7.25 16-16v-96C400 103.3 392.8 96 384 96h-13.5C345.8 39.5 289.6 0 224 0S102.3 39.5 77.5 96H64C55.25 96 48 103.3 48 112v96C48 216.8 55.25 224 64 224zM104 136C104 113.9 125.5 96 152 96h144c26.5 0 48 17.88 48 40V160c0 53-43 96-96 96h-48c-53 0-96-43-96-96V136z" />
-            </svg>Contact 3</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M89.3 293.9L207.8 320h32.31l118.5-26.09c15.48-3.408 26.17-17.43 25.24-33.11l-6.906-117C372.8 63.19 305.5 0 224 0C170.4 0 123.4 27.6 96 69.22V32c8.836 0 16-7.164 16-16C112 7.162 104.8 0 96 0H80C71.16 0 64 7.162 64 16c0 0 .2891 247.7 .3984 247.6C64.86 278.1 74.79 290.7 89.3 293.9zM329.7 156.2l.8125 13.76c-25.14 13.92-64.23 43.82-72.69 97.02L248 269.1V171.5L329.7 156.2zM224 48c46.57 0 85.95 30.06 99.72 72H124.2C137.9 78.14 177.4 48 224 48zM118.3 156.2L200 171.5v97.63L190.2 266.1C181.7 213.8 142.6 183.9 117.5 169.9L118.3 156.2zM320 352H128c-70.69 0-128 57.31-128 128c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 409.3 390.7 352 320 352zM160 464l64-48l64 48H160z" />
-            </svg>Contact 4</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M342.5 113.6C331.5 64 310.1 0 278.2 0c-10.37 0-19.68 4.5-27.43 10.5c-15.25 11.88-36.77 11.88-52.02 0C191 4.5 181.8 0 171.4 0C138.6 0 118 64.5 106.9 114.1C133 124 170.7 132.6 223.1 132.6C278.1 132.6 316.4 123.8 342.5 113.6zM96.01 223.8C96.01 294.5 153.4 352 223.1 352c70.74 0 127.1-57.25 127.1-128c70.49-40.75 94.73-105.1 95.11-106.9c2.75-7.625-1.062-15.81-8.686-19.44C430.8 94.19 421.7 96.38 416.5 103c-.3749 .625-44.74 61.63-192.5 61.63c-146.9 0-191.6-60.38-192.5-61.63C26.39 96.38 17.27 94.13 9.647 97.63c-7.749 3.5-11.5 11.88-8.749 19.5C1.273 118.1 25.52 183.1 96.01 223.8zM447 472.2C434 420.4 387.5 384 334 384H114c-53.45 0-100 36.38-113 88.24C-4.043 492.4 11.19 512 32 512h383.1C436.8 512 452.1 492.4 447 472.2z" />
-            </svg>Contact 5</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M224 272c70.75 0 128-57.25 128-128V0l-64 32l-64-32L160 32L96 0v144C96 214.8 153.3 272 224 272zM144 128h160v16C304 188.1 268.1 224 224 224S144 188.1 144 144V128zM274.7 304H173.3C77.61 304 0 381.6 0 477.3C0 496.5 15.52 512 34.66 512H413.3C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z" />
-            </svg>Contact 6</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M96 128C96 57.31 153.3 0 224 0C294.7 0 352 57.31 352 128C352 198.7 294.7 256 224 256C153.3 256 96 198.7 96 128zM128 370.3C104.9 377.2 88 398.6 88 424C88 454.9 113.1 480 144 480C174.9 480 200 454.9 200 424C200 398.6 183.1 377.2 160 370.3V304.9C166 304.3 172.1 304 178.3 304H269.7C275.9 304 281.1 304.3 288 304.9V362C260.4 369.1 240 394.2 240 424V464C240 472.8 247.2 480 256 480H272C280.8 480 288 472.8 288 464C288 455.2 280.8 448 272 448V424C272 406.3 286.3 392 304 392C321.7 392 336 406.3 336 424V448C327.2 448 320 455.2 320 464C320 472.8 327.2 480 336 480H352C360.8 480 368 472.8 368 464V424C368 394.2 347.6 369.1 320 362V311.2C393.1 332.9 448 401.3 448 482.3C448 498.7 434.7 512 418.3 512H29.71C13.3 512 0 498.7 0 482.3C0 401.3 54.02 332.9 128 311.2V370.3zM120 424C120 410.7 130.7 400 144 400C157.3 400 168 410.7 168 424C168 437.3 157.3 448 144 448C130.7 448 120 437.3 120 424z" />
-            </svg>Contact 7</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
               <path
                 d="M224 256c70.7 0 128-57.31 128-128S294.7 0 224 0C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3c-95.73 0-173.3 77.6-173.3 173.3C0 496.5 15.52 512 34.66 512H413.3C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304zM479.1 320h-73.85C451.2 357.7 480 414.1 480 477.3C480 490.1 476.2 501.9 470 512h138C625.7 512 640 497.6 640 479.1C640 391.6 568.4 320 479.1 320zM432 256C493.9 256 544 205.9 544 144S493.9 32 432 32c-25.11 0-48.04 8.555-66.72 22.51C376.8 76.63 384 101.4 384 128c0 35.52-11.93 68.14-31.59 94.71C372.7 243.2 400.8 256 432 256z" />
-            </svg>Contact 8</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M48 224C56.88 224 64 216.9 64 208V192c0-88.25 71.75-160 160-160s160 71.75 160 160v16C384 252.1 348.1 288 304 288h-32c0-17.62-14.38-32-32-32h-32c-17.62 0-32 14.38-32 32s14.38 32 32 32h96c61.88-.125 111.9-50.13 112-112V192c0-105.9-86.13-192-192-192S32 86.13 32 192v16C32 216.9 39.13 224 48 224zM208 224h32c22.88 0 43.98 12.2 55.36 31.95L304 256c26.5 0 48-21.5 48-47.1V192c0-70.75-57.25-128-128-128s-128 57.25-128 128c0 40.38 19.12 75.99 48.37 99.49C144.2 290.2 144 289.3 144 288C144 252.6 172.6 224 208 224zM314.7 352H133.3C59.7 352 0 411.7 0 485.3C0 500.1 11.94 512 26.66 512H421.3C436.1 512 448 500.1 448 485.3C448 411.7 388.3 352 314.7 352z" />
-            </svg>Contact 9</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
           <div class="side__lower-contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
               <path
                 d="M96 128C96 57.31 153.3 0 224 0C294.7 0 352 57.31 352 128V144C352 214.7 294.7 272 224 272C153.3 272 96 214.7 96 144V128zM297.3 96H296C275.5 96 257.3 86.4 245.6 71.46C231.9 95.67 205.8 112 176 112H145.6C144.6 117.2 144 122.5 144 128V144C144 188.2 179.8 224 224 224C268.2 224 304 188.2 304 144V128C304 116.6 301.6 105.8 297.3 96zM286.7 320C375.8 320 448 392.2 448 481.3C448 498.2 434.2 512 417.3 512H30.72C13.75 512 0 498.2 0 481.3C0 392.2 72.21 320 161.3 320H286.7z" />
-            </svg>Contact 10</div>
+            </svg>
+            <div class="side__lower-contact-textbox">
+              <div class="side__lower-contact-name">Laura Jones</div>
+              <div class="side__lower-contact-text">Lorem ipsum dolor sit amet...</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="chat">
-      <div class="chat__header"></div>
-      <div class="chat__main"></div>
-      <div class="chat__action"></div>
+      <div class="chat__header">
+        <div class="chat__header-all">
+          <img src="./images/laura.jpg" class="chat__header-image">
+          <div class="chat__header-contact">
+            <p class="chat__header-name">Laura Jones</p>
+            <p class="chat__header-status">Typing...</p>
+          </div>
+        </div>
+        <div class="chat__header-icons">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M375 72.97C349.1 46.1 306.9 46.1 280.1 72.97L88.97 264.1C45.32 308.6 45.32 379.4 88.97 423C132.6 466.7 203.4 466.7 247 423L399 271C408.4 261.7 423.6 261.7 432.1 271C442.3 280.4 442.3 295.6 432.1 304.1L280.1 456.1C218.6 519.4 117.4 519.4 55.03 456.1C-7.364 394.6-7.364 293.4 55.03 231L247 39.03C291.7-5.689 364.2-5.689 408.1 39.03C453.7 83.75 453.7 156.3 408.1 200.1L225.2 384.7C193.6 416.3 141.6 413.4 113.7 378.6C89.88 348.8 92.26 305.8 119.2 278.8L271 127C280.4 117.7 295.6 117.7 304.1 127C314.3 136.4 314.3 151.6 304.1 160.1L153.2 312.7C143.5 322.4 142.6 337.9 151.2 348.6C161.2 361.1 179.9 362.2 191.2 350.8L375 167C401 141.1 401 98.94 375 72.97V72.97z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 88C0 74.75 10.75 64 24 64H424C437.3 64 448 74.75 448 88C448 101.3 437.3 112 424 112H24C10.75 112 0 101.3 0 88zM0 248C0 234.7 10.75 224 24 224H424C437.3 224 448 234.7 448 248C448 261.3 437.3 272 424 272H24C10.75 272 0 261.3 0 248zM424 432H24C10.75 432 0 421.3 0 408C0 394.7 10.75 384 24 384H424C437.3 384 448 394.7 448 408C448 421.3 437.3 432 424 432z" />
+          </svg>
+        </div>
+      </div>
+      <div class="chat__main">
+        <div class="chat__main-cal">11 Sept. 2001</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dignissimos nihil ratione dicta sequi a. Labore, eius?</div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto consequatur dignissimos minus ipsa fugit. Non?</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">http://aiioats.net</a></div>
+        <div class="chat__main-msg chat__main-msg-user"><a href="#">https://google.com/?q=911</a></div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem ipsum dolor sit amet.</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+          a quo, id adipisci ea repellendus atque qui delectus eos suscipit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">ftp://172.20.27.34:1556</a></div>
+      </div>
+      <div class="chat__action"><!--TODO : SEND BUTTON SVG-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path
+            d="M130.7 313.9C126.5 300.4 137.8 288 151.1 288H364.5C378.7 288 389.9 300.4 385.8 313.9C368.1 368.4 318.2 408 258.2 408C198.2 408 147.5 368.4 130.7 313.9V313.9zM208.4 192C208.4 209.7 194 224 176.4 224C158.7 224 144.4 209.7 144.4 192C144.4 174.3 158.7 160 176.4 160C194 160 208.4 174.3 208.4 192zM304.4 192C304.4 174.3 318.7 160 336.4 160C354 160 368.4 174.3 368.4 192C368.4 209.7 354 224 336.4 224C318.7 224 304.4 209.7 304.4 192zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z" />
+        </svg>
+        <input type="text" class="chat__action-input" value="hello world">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+          <path
+            d="M192 352c53.03 0 96-42.97 96-96v-160c0-53.03-42.97-96-96-96s-96 42.97-96 96v160C96 309 138.1 352 192 352zM344 192C330.7 192 320 202.7 320 215.1V256c0 73.33-61.97 132.4-136.3 127.7c-66.08-4.169-119.7-66.59-119.7-132.8L64 215.1C64 202.7 53.25 192 40 192S16 202.7 16 215.1v32.15c0 89.66 63.97 169.6 152 181.7V464H128c-18.19 0-32.84 15.18-31.96 33.57C96.43 505.8 103.8 512 112 512h160c8.222 0 15.57-6.216 15.96-14.43C288.8 479.2 274.2 464 256 464h-40v-33.77C301.7 418.5 368 344.9 368 256V215.1C368 202.7 357.3 192 344 192z" />
+        </svg>
+      </div>
     </section>
   </main>
+  <script>
+    const contacts = document.querySelectorAll(`.side__lower-contact`);
+    for (let i = 0; i < contacts.length; i++) {
+      contacts[i].addEventListener(`click`, () => {
+        contacts[i].classList.toggle(`active-chat`);
+        // just for fun :D
+      });
+    }
+  </script>
 </body>
 
 </html>

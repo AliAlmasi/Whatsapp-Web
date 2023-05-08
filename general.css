@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*::selection {
+  color: #111;
+  background-color: #6cc4bc;
+}
+
+
+
+:root {
+  --main-bg: linear-gradient(to top, #fdfdfd 80%, #049588 20%);
+  --main-height: 95vh;
+  --main-width: 95vw;
+  --svg-circle: 50%;
+
+  --header-bg-color: #ebefef;
+  --header-height: 6.5rem;
+  --header-profile-image: 4.5rem;
+  --chat-width: 70%;
+  --chat-bg: #ddd8d5;
+  --chat-action-height: 6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: var(--main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+main {
+  width: var(--main-width);
+  height: var(--main-height);
+  background-color: #fefefe;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+a:link {
+  font-family: monospace;
+  color: #049588;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0b7068 !important;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #153532 !important;
+}
+
+a:visited {
+  color: #049588;
+}
