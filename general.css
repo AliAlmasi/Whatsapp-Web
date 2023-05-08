@@ -55,6 +55,10 @@ main {
   flex-direction: row;
 }
 
+svg {
+  fill: #333;
+}
+
 a:link {
   font-family: monospace;
   color: #049588;

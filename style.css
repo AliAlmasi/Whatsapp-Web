@@ -9,7 +9,7 @@
 .side__upper {
   display: flex;
   flex-direction: column;
-  height: 15%;
+  height: 18%;
   background-color: #f7f7f7;
 }
 
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin: auto 0;
 }
 
 .side__upper-search-input {
@@ -201,6 +201,10 @@
   cursor: pointer;
 }
 
+.chat__action-emoji:hover {
+  fill: #f59f00;
+}
+
 .chat__action-input {
   width: 90%;
   height: 4rem;
@@ -211,6 +215,17 @@
   padding: .4rem .8rem;
   border-radius: .6rem;
   background-color: #fefefe;
+}
+
+.chat__action-send {
+  margin-left: -6rem;
+  width: 2.4rem !important;
+  height: 2.4rem !important;
+  fill: #049588;
+}
+
+.chat__action-send:hover {
+  fill: #134e49;
 }
 
 .chat__main {
@@ -245,7 +260,7 @@
   flex-direction: column;
   margin-top: 2rem;
   max-width: 60%;
-  -webkit-mask:
+  mask:
     radial-gradient(var(--t) at var(--_d) 0, #0000 98%, #000 102%) var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
     conic-gradient(at var(--r) var(--r), #000 75%, #0000 0) calc(var(--r)/-2) calc(var(--r)/-2) padding-box,
     radial-gradient(50% 50%, #000 98%, #0000 101%) 0 0/var(--r) var(--r) space padding-box;
