@@ -12,24 +12,51 @@
   background-color: #6cc4bc;
 }
 
-
-
 :root {
-  --main-bg: linear-gradient(to top, #fdfdfd 80%, #049588 20%);
+  --main-bg: linear-gradient(to top, var(--white3) 80%, var(--primary-color) 20%);
   --main-height: 95vh;
   --main-width: 95vw;
-  --svg-circle: 50%;
 
-  --header-bg-color: #ebefef;
+  --side-width: 30%;
+  --side-upper-height: 18%;
+  --side-search-input-width: 75%;
+  --side-lower-height: calc(100% - var(var(--side-upper-height)));
+  --side-contact-height: 6rem;
+
   --header-height: 6.5rem;
   --header-profile-image: 4.5rem;
+
   --chat-width: 70%;
-  --chat-bg: #ddd8d5;
   --chat-action-height: 6rem;
+  --chat-action-input-width: 90%;
+  --chat-action-input-height: 4rem;
+  --chat-main-height: calc(var(--main-height) - var(--header-height) - var(--chat-action-height));
 }
 
 html {
   font-size: 62.5%;
+
+  --svg-circle: 50%;
+
+  --white1: #fefefe;
+  --white2: #f7f7f7;
+  --white3: #fdfdfd;
+  --gray: #919191;
+
+  --chat-bg: #ddd8d5;
+  --header-bg-color: #ebefef;
+  --chat-action-bgcolor: #efefef;
+  --chat-msg-me: #caebe8;
+  --hover-bgcolor: #ebefef;
+  --active-bgcolor: #dcdddd;
+  --primary-color: #049588;
+  --primary-dark: #134e49;
+  --primary-light: #71ddb9;
+
+  --font-lg: 1.8rem;
+  --font-md: 1.6rem;
+  --font-sm: 1.4rem;
+  --font-xs: 1.2rem;
 }
 
 body {
@@ -47,7 +74,7 @@ body {
 main {
   width: var(--main-width);
   height: var(--main-height);
-  background-color: #fefefe;
+  background-color: var(--white1);
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25);
   border-radius: 6px;
   overflow: hidden;
