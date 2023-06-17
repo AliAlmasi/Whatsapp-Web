@@ -8,6 +8,7 @@
   <title>Whatsapp web</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./general.css">
+  <link rel="stylesheet" href="./queries.css">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
 </head>
 
@@ -153,7 +154,40 @@
         </div>
       </div>
       <div class="chat__main">
-        <div class="chat__main-cal">11 Sept. 2001</div>
+        <div class="chat__main-date">11 Sept. 2001</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dignissimos nihil ratione dicta sequi a. Labore, eius?</div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto consequatur dignissimos minus ipsa fugit. Non?</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">http://aiioats.net</a></div>
+        <div class="chat__main-msg chat__main-msg-user"><a href="#">https://google.com/?q=911</a></div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem ipsum dolor sit amet.</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+          a quo, id adipisci ea repellendus atque qui delectus eos suscipit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">ftp://172.20.27.34:1556</a></div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dignissimos nihil ratione dicta sequi a. Labore, eius?</div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto consequatur dignissimos minus ipsa fugit. Non?</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">http://aiioats.net</a></div>
+        <div class="chat__main-msg chat__main-msg-user"><a href="#">https://google.com/?q=911</a></div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem ipsum dolor sit amet.</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+          a quo, id adipisci ea repellendus atque qui delectus eos suscipit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">ftp://172.20.27.34:1556</a></div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dignissimos nihil ratione dicta sequi a. Labore, eius?</div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto consequatur dignissimos minus ipsa fugit. Non?</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">http://aiioats.net</a></div>
+        <div class="chat__main-msg chat__main-msg-user"><a href="#">https://google.com/?q=911</a></div>
+        <div class="chat__main-msg chat__main-msg-user">Lorem ipsum dolor sit amet.</div>
+        <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+          a quo, id adipisci ea repellendus atque qui delectus eos suscipit.</div>
+        <div class="chat__main-msg chat__main-msg-me"><a href="#">ftp://172.20.27.34:1556</a></div>
         <div class="chat__main-msg chat__main-msg-me">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Dignissimos nihil ratione dicta sequi a. Labore, eius?</div>
         <div class="chat__main-msg chat__main-msg-user">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -189,6 +223,10 @@
       contacts[i].addEventListener(`click`, () => {
         contacts[i].classList.toggle(`active-chat`);
         // just for fun :D
+      });
+      window.addEventListener('load', () => {
+        const chatMainEl = document.querySelector(`.chat__main`);
+        chatMainEl.scrollTo(0, chatMainEl.scrollHeight)
       });
     }
   </script>

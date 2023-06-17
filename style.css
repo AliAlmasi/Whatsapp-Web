@@ -245,12 +245,13 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: safe flex-end;
+  /* justify-content: flex-end; */
   padding: 2.5rem 1rem;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.chat__main-cal {
+.chat__main-date {
   align-self: center;
   padding: 1rem 2rem;
   font-size: 1.1rem;
